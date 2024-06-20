@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Senior</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PayPal Senior</h1>
+    </header>
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="transaction-section" class="hidden">
+            <h2>Transactions</h2>
+            <button id="new-transaction">New Transaction</button>
+            <ul id="transaction-list">
+                <!-- Transactions will be listed here -->
+            </ul>
+        </section>
+        <section id="alerts-section" class="hidden">
+            <h2>Alerts</h2>
+            <ul id="alert-list">
+                <!-- Alerts will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
